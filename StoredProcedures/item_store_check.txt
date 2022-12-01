@@ -1,0 +1,14 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `item_store_check`(
+in store_id INT,
+in item_id INT
+)
+BEGIN
+	SELECT si.store_id, si.item_id,  si.qty_in_stock,
+	CONCAT(s.street_name,", ",s.city,", ",s.zip_code) address
+	FROM store_item si
+	JOIN store s ON s.store_id = si.store_id
+	WHERE si.item_id = item_id AND s.store_id != store_id
+		AND si.qty_in_stock >0
+	ORDER BY ABS((SELECT zip_code FROM store ss WHERE ss.store_id = store_id)-s.zip_code)
+	LIMIT 5;
+END
