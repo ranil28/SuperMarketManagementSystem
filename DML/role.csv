@@ -1,0 +1,16 @@
+Role_id,Role_name,role_desc
+1,Cleaner,Cleans and maintains the super store.
+2,Bag Person,Restock plastic bags. Puts all purchases in bags
+3,Cashier,Checksout the customer
+4,Driver,Transports goods from one store to another or from warehouses.
+5,Team Lead,Leads a group of people. Usually a set or 5 to 10 people
+6,Store Manager,Incharge of a store. Responsible about everything the store
+7,County Manager,Responsible for all stores in a given county
+8,Bussiness Head,Head of certain divisions of the company
+9,Shipping Person,Person responsible to ship packages
+10,Restock Person,Person responsible tfor restaocking aisles
+11,Packing Person,Packs packages that needs to be shipped
+12,Inventory Maintainer,Maintains inventories and their capacities in the store. Orders invetories when necessary
+13,CEO,Chief Operating Officer
+14,Board of Directors,Board of Directors
+15,Warehouse Designer,Designs all the warehouses for storage and safety
