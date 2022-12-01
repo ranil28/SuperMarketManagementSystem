@@ -1,6 +1,5 @@
 CREATE DEFINER=`root`@`localhost` PROCEDURE `add_item_to_cart`(
 in bill_id INT,
-in store_id INT,
 in item_id INT,
 in quantity INT
 )
@@ -10,19 +9,18 @@ DECLARE item_price numeric(6, 2);
 DECLARE discount_value numeric(6,2);
 
 SELECT discount.percent_off INTO discount_percent from discount
-where discount.store_id = store_id
+where discount.store_id = (SELECT b.store_id FROM bill b WHERE b.bill_id = bill_id)
 and discount.item_id = item_id;
 
 SELECT store_item.unit_price INTO item_price
 from store_item where 
-store_item.store_id = store_id and
+store_item.store_id = (SELECT b.store_id FROM bill b WHERE b.bill_id = bill_id) and
 store_item.item_id = item_id;
 
 
 IF discount_percent is NULL THEN
 	INSERT INTO `supermarkets`.`bill_items`
 	(`bill_id`,
-	`store_id`,
 	`item_id`,
 	`quantity`,
 	`unit_price`,
@@ -30,7 +28,6 @@ IF discount_percent is NULL THEN
 	`net_price`)
 	VALUES
 	(bill_id,
-	store_id,
 	item_id,
 	quantity,
 	item_price,
@@ -40,7 +37,6 @@ IF discount_percent is NULL THEN
 ELSE
 	INSERT INTO `supermarkets`.`bill_items`
 	(`bill_id`,
-	`store_id`,
 	`item_id`,
 	`quantity`,
 	`unit_price`,
@@ -48,7 +44,6 @@ ELSE
 	`net_price`)
 	VALUES
 	(bill_id,
-	store_id,
 	item_id,
 	quantity,
 	item_price,
