@@ -1,4 +1,8 @@
-CREATE DEFINER=`root`@`localhost` FUNCTION `create_bill`() RETURNS int
+CREATE DEFINER=`root`@`localhost` FUNCTION `create_bill`(
+store_id INT,
+registered_phone varchar(12),
+bill_date date
+) RETURNS int
 BEGIN
 
 	declare bill_id INT;
