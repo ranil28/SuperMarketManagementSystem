@@ -1,7 +1,5 @@
 CREATE DEFINER=`root`@`localhost` PROCEDURE `get_bill_amount`(
-in bill_id INT,
-out bill_amount numeric(7,2),
-out discount_amount numeric(6,2)
+in bill_id INT
 )
 BEGIN
 
@@ -9,6 +7,16 @@ BEGIN
     declare discount numeric(6,2);
     declare registered_phone varchar(12);
     declare isEmployee INT;
+    
+    SELECT item.name as item_name,
+	bill_items.quantity as quantity,
+	bill_items.unit_price as unit_price,
+	bill_items.discount_amount as discount_amount,
+	bill_items.net_price as net_price
+	from item, bill_items
+	where item.item_id = bill_items.item_id
+	and bill_items.bill_id = bill_id;
+    
     
     SELECT SUM(bill_items.net_price * bill_items.quantity) INTO total
     from bill_items WHERE bill_items.bill_id = bill_id;
@@ -26,11 +34,11 @@ BEGIN
     where employee.is_working = 1);
     
     IF isEmployee >= 1 then
-     SELECT total * (1 - 0.2) into bill_amount;
-     SELECT (total * (0.2) + discount) into discount_amount;
+     SELECT total * (1 - 0.2);
+     SELECT (total * (0.2) + discount);
 	else
-	 SELECT total into bill_amount;
-     SELECT discount into discount_amount;
+	 SELECT total;
+     SELECT discount;
 	END IF;
 
 END
