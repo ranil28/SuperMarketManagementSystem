@@ -40,5 +40,6 @@ BEGIN
 	 SELECT total;
      SELECT discount;
 	END IF;
+	SELECT total; 
 
 END
