@@ -13,7 +13,7 @@ BEGIN
     SELECT SUM(bill_items.net_price * bill_items.quantity) INTO total
     from bill_items WHERE bill_items.bill_id = bill_id;
     
-    SELECT SUM(bill_items.discount_amount * bill_item.quantity) INTO discount
+    SELECT SUM(bill_items.discount_amount * bill_items.quantity) INTO discount
     from bill_items WHERE bill_items.bill_id = bill_id;
     
     SELECT bill.registered_phone INTO  registered_phone
