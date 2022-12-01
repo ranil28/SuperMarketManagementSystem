@@ -1,0 +1,312 @@
+item_id,category_id,name,description,brand
+1,20,Basil,,other
+2,16,Fries / Tater tots,,kwikmart
+3,14,Hummus,,kwikmart
+4,6,Diapers,,kwikmart
+5,11,Vitamins / Supplements,,kwikmart
+6,12,Pepper,,kwikmart
+7,16,Burritos,,other
+8,6,Wipes,,kwikmart
+9,24,Pasta sauce,,kwikmart
+10,5,Flowers / Greeting card,,kwikmart
+11,7,Cookies,,kwikmart
+12,25,Pasta,,kwikmart
+13,12,Cauliflower,,kwikmart
+14,15,Turkey,,kwikmart
+15,13,Antibiotic,,kwikmart
+16,11,Toilet paper,,kwikmart
+17,20,Garlic,,kwikmart
+18,12,Cucumber,,kwikmart
+19,11,Antiperspirant / Deodorant,,kwikmart
+20,12,Zucchini,,kwikmart
+21,25,Mac & cheese,,kwikmart
+22,12,Mushroom,,kwikmart
+23,5,Light bulbs,,other
+24,12,Potatoe,,kwikmart
+25,10,Sponges / Scrubbers,,kwikmart
+26,23,Arsenic,,kwikmart
+27,19,Ricotta,,kwikmart
+28,15,Beef,,kwikmart
+29,12,Squash,,kwikmart
+30,15,Bacon / Sausage,,kwikmart
+31,20,Oregano,,kwikmart
+32,3,Printer paper,,kwikmart
+33,21,Tomatoes,,kwikmart
+34,8,Whipped cream,,kwikmart
+35,25,Vegetable oil,,kwikmart
+36,16,TV dinners,,kwikmart
+37,19,Provolone,,kwikmart
+38,9,Peaches,,kwikmart
+39,1,Beer,,kwikmart
+40,12,Mushroom,,other
+41,10,Air freshener,,kwikmart
+42,3,Notepad / Envelopes,,kwikmart
+43,21,Olives,,kwikmart
+44,21,Tuna / Chicken,,kwikmart
+45,26,Fresh bread,,kwikmart
+46,11,Sunblock,,kwikmart
+47,26,Pita bread,,other
+48,5,Light bulbs,,other
+49,12,Asparagus,,kwikmart
+50,9,Berries,,kwikmart
+51,2,Tilapia,,other
+52,25,Cereal,,kwikmart
+53,7,Pretzels,,kwikmart
+54,26,Bagels / Croissants,,kwikmart
+55,4,Spaghetti night,,kwikmart
+56,18,Paper towels,,kwikmart
+57,25,Bouillon cubes,,other
+58,5,Insect repellent,,kwikmart
+59,1,Whiskey,,kwikmart
+60,19,Swiss,,kwikmart
+61,11,Toothpaste,,kwikmart
+62,6,Formula,,kwikmart
+63,12,Asparagus,,other
+64,2,Tilapia,,kwikmart
+65,1,Champagne,,kwikmart
+66,17,Cake icing / Decorations,,kwikmart
+67,1,Saké,,kwikmart
+68,18,Sandwich / Freezer bags,,kwikmart
+69,2,Mussels,,kwikmart
+70,11,Hair gel / Spray,,kwikmart
+71,7,Candy / Gum,,kwikmart
+72,13,Antacid,,kwikmart
+73,5,Charcoal / Propane,,kwikmart
+74,22,Cat food / Treats,,kwikmart
+75,16,Burritos,,kwikmart
+76,17,Sugar,,kwikmart
+77,13,Cold / Flu / Sinus,,kwikmart
+78,22,Flea treatment,,kwikmart
+79,17,Shortening,,kwikmart
+80,6,Formula,,other
+81,26,Pie! Pie! Pie!,,kwikmart
+82,19,Cheddar,,kwikmart
+83,14,Chip dip,,kwikmart
+84,21,Soup / Chili,,kwikmart
+85,9,Melon,,kwikmart
+86,12,Tomatoe,,kwikmart
+87,24,Salad dressing,,kwikmart
+88,24,Ketchup / Mustard,,kwikmart
+89,5,Batteries,,other
+90,20,Paprika,,kwikmart
+91,21,Veggies,,kwikmart
+92,3,Postage stamps,,kwikmart
+93,20,Mint,,other
+94,22,Cat litter,,kwikmart
+95,17,Yeast,,other
+96,12,Lettuce / Greens,,kwikmart
+97,12,Celery,,kwikmart
+98,25,Pickles,,kwikmart
+99,25,Vinegar,,kwikmart
+100,9,Oranges,,kwikmart
+101,11,Cosmetics,,kwikmart
+102,14,Ready-bake breads,,kwikmart
+103,16,Vegetables,,kwikmart
+104,22,Dog food / Treats,,kwikmart
+105,5,Light bulbs,,kwikmart
+106,4,Pizza night,,kwikmart
+107,2,Lobster,,kwikmart
+108,24,Mayonnaise,,kwikmart
+109,4,Taco night,,kwikmart
+110,13,Antidiarrheal,,kwikmart
+111,2,Shrimp,,kwikmart
+112,17,Cake / Brownie mix,,kwikmart
+113,9,Bananas,,kwikmart
+114,20,Black pepper,,kwikmart
+115,16,TV dinners,,other
+116,8,Cottage cheese,,kwikmart
+117,13,Allergy,,kwikmart
+118,8,Milk,,kwikmart
+119,16,Fish sticks,,kwikmart
+120,11,Razors / Shaving cream,,kwikmart
+121,5,Charcoal / Propane,,kwikmart
+122,4,Chili night,,kwikmart
+123,1,Sports drink,,kwikmart
+124,8,Butter / Margarine,,kwikmart
+125,9,Nectarines,,kwikmart
+126,6,Baby wash,,kwikmart
+127,18,Non-stick spray,,kwikmart
+128,24,Gravy,,kwikmart
+129,5,Batteries,,kwikmart
+130,1,Sports drink,,other
+131,20,Cilantro,,kwikmart
+132,23,Vinyl chloride,,kwikmart
+133,14,Eggs / Fake eggs,,kwikmart
+134,11,Bath soap / Hand soap,,kwikmart
+135,15,Ground beef / Turkey,,kwikmart
+136,13,Band-aids / Medical,,kwikmart
+137,14,Chip dip,,other
+138,12,Carrots,,kwikmart
+139,8,Yogurt,,kwikmart
+140,13,Pain reliever,,kwikmart
+141,11,Cotton swabs / Balls,,kwikmart
+142,8,Half & half,,kwikmart
+143,9,Grapes,,other
+144,17,Bread crumbs,,kwikmart
+145,20,Ginger,,kwikmart
+146,5,Light bulbs,,kwikmart
+147,12,Broccoli,,kwikmart
+148,10,Glass cleaner,,kwikmart
+149,2,Salmon,,kwikmart
+150,1,Rum,,kwikmart
+151,23,Cigarettes,,kwikmart
+152,1,Soda pop,,other
+153,7,Oatmeal,,kwikmart
+154,7,Nuts / Seeds,,kwikmart
+155,1,Club soda / Tonic,,kwikmart
+156,20,Cinnamon,,kwikmart
+157,25,Lemon / Lime juice,,kwikmart
+158,22,Cat litter,,other
+159,3,Glue / Tape,,kwikmart
+160,18,Napkins,,kwikmart
+161,21,Applesauce,,kwikmart
+162,4,Take-out deli food,,kwikmart
+163,5,Newspaper / Magazine,,kwikmart
+164,22,Pet shampoo,,other
+165,1,Red wine / White wine,,other
+166,5,Random impulse buy,,kwikmart
+167,24,Mayonnaise,,other
+168,17,Shortening,,other
+169,24,Syrup,,kwikmart
+170,1,Soda pop,,kwikmart
+171,9,Avocados,,kwikmart
+172,15,Chicken,,kwikmart
+173,13,Aspirin,,kwikmart
+174,24,Honey,,kwikmart
+175,10,Garbage bags,,other
+176,16,Breakfasts,,kwikmart
+177,21,Tinned meats,,kwikmart
+178,25,Rice,,kwikmart
+179,15,Turkey,,other
+180,25,Tea,,kwikmart
+181,15,Beef,,other
+182,1,Gin,,kwikmart
+183,5,Random impulse buy,,kwikmart
+184,14,Tofu,,kwikmart
+185,19,Sandwich slices,,kwikmart
+186,9,Plums,,kwikmart
+187,20,Red pepper,,kwikmart
+188,15,Lunchmeat,,kwikmart
+189,9,Grapes,,kwikmart
+190,14,English muffins,,kwikmart
+191,5,Automotive,,kwikmart
+192,2,Tuna,,kwikmart
+193,16,Pizza,,kwikmart
+194,11,Facial cleanser,,kwikmart
+195,20,Oregano,,other
+196,24,BBQ sauce,,other
+197,5,Insect repellent,,kwikmart
+198,7,Popcorn,,kwikmart
+199,17,Sugar,,other
+200,1,Vodka,,kwikmart
+201,24,Worcestershire sauce,,kwikmart
+202,26,Cake / Cookies,,kwikmart
+203,19,Bleu cheese,,kwikmart
+204,6,Baby food,,kwikmart
+205,26,Buns / Rolls,,kwikmart
+206,24,BBQ sauce,,kwikmart
+207,24,Relish,,kwikmart
+208,14,Tortillas,,kwikmart
+209,14,Bagels,,other
+210,18,Aluminum foil,,kwikmart
+211,19,Cream cheese,,kwikmart
+212,15,Hot dogs,,kwikmart
+213,8,Sour cream,,kwikmart
+214,11,Shampoo / Conditioner,,kwikmart
+215,19,Feta,,kwikmart
+216,25,Bouillon cubes,,kwikmart
+217,12,Onion,,kwikmart
+218,1,Red wine / White wine,,kwikmart
+219,11,Facial tissue,,kwikmart
+220,20,Salt,,kwikmart
+221,11,Moisturizing lotion,,kwikmart
+222,17,Sugar substitute,,kwikmart
+223,10,Dish / Dishwasher soap,,kwikmart
+224,11,Feminine products,,kwikmart
+225,10,Air freshener,,other
+226,12,Corn,,kwikmart
+227,11,Mouthwash,,kwikmart
+228,18,Wax paper,,kwikmart
+229,11,Floss,,kwikmart
+230,25,Olive oil,,kwikmart
+231,5,Automotive,,kwikmart
+232,13,Prescription pick-up,,kwikmart
+233,25,Packaged meals,,kwikmart
+234,1,Mixers,,kwikmart
+235,24,Soy sauce,,kwikmart
+236,19,Mozzarella,,kwikmart
+237,20,Mint,,kwikmart
+238,20,Parsley,,kwikmart
+239,17,Baking powder / Soda,,kwikmart
+240,24,Steak sauce,,other
+241,16,Ice cream / Sorbet,,kwikmart
+242,22,Flea treatment,,other
+243,11,Condoms / Other b.c.,,kwikmart
+244,2,Oysters,,kwikmart
+245,14,Bagels,,kwikmart
+246,9,Nectarines,,other
+247,16,Popsicles,,other
+248,1,Juice,,other
+249,9,Lemons / Limes,,kwikmart
+250,10,Mop head / Vacuum bags,,kwikmart
+251,9,Apples,,kwikmart
+252,12,Spinach,,other
+253,26,Sliced bread,,kwikmart
+254,1,Juice,,kwikmart
+255,18,Plastic wrap,,kwikmart
+256,2,Crab,,kwikmart
+257,5,Flowers / Greeting card,,kwikmart
+258,15,Ham / Pork,,kwikmart
+259,26,Donuts / Pastries,,kwikmart
+260,25,Instant potatoes,,kwikmart
+261,20,Salt,,other
+262,21,Fruit,,kwikmart
+263,6,Lotion,,kwikmart
+264,10,Garbage bags,,kwikmart
+265,7,Crackers,,kwikmart
+266,9,Grapefruit,,kwikmart
+267,26,Pita bread,,kwikmart
+268,19,Cream cheese,,other
+269,17,Flour,,kwikmart
+270,14,Fruit juice,,kwikmart
+271,10,Bleach / Detergent,,kwikmart
+272,11,Lip balm,,kwikmart
+273,19,Goat cheese,,kwikmart
+274,19,Parmesan,,kwikmart
+275,21,Baked beans,,kwikmart
+276,3,Pens / Pencils,,kwikmart
+277,17,Yeast,,kwikmart
+278,16,Pizza Rolls,,kwikmart
+279,4,Take-out deli food,,other
+280,23,Asbestos,,kwikmart
+281,2,Catfish,,kwikmart
+282,19,Cottage cheese,,kwikmart
+283,23,Radionuclides,,kwikmart
+284,9,Cherries,,kwikmart
+285,16,Popsicles,,kwikmart
+286,24,Jam / Jelly / Preserves,,kwikmart
+287,21,Broth,,kwikmart
+288,10,Dish / Dishwasher soap,,other
+289,20,Vanilla extract,,kwikmart
+290,22,Pet shampoo,,kwikmart
+291,5,Batteries,,kwikmart
+292,7,Granola bars / Mix,,kwikmart
+293,7,Crackers,,other
+294,24,Salsa,,kwikmart
+295,3,CDRs / DVDRs,,kwikmart
+296,10,Bathroom cleaner,,kwikmart
+297,25,Pancake / Waffle mix,,kwikmart
+298,20,Basil,,kwikmart
+299,12,Spinach,,kwikmart
+300,25,Peanut butter,,kwikmart
+301,5,Newspaper / Magazine,,kwikmart
+302,4,Burger night,,kwikmart
+303,24,Steak sauce,,kwikmart
+304,25,Coffee / Filters,,kwikmart
+305,7,Potato / Corn chips,,kwikmart
+306,17,Chocolate chips / Cocoa,,kwikmart
+307,9,Pears,,kwikmart
+308,16,Juice concentrate,,kwikmart
+309,24,Hot sauce,,kwikmart
+310,9,Kiwis,,kwikmart
+311,7,Dried fruit,,kwikmart
