@@ -76,7 +76,7 @@ CREATE TABLE supply (
 CREATE TABLE supply_item (
   supply_id  int(10) NOT NULL, 
   item_id    int(10) NOT NULL, 
-  quanttity  int(10) NOT NULL, 
+  quantity  int(10) NOT NULL, 
   unit_price numeric(6, 2) NOT NULL, 
   PRIMARY KEY (supply_id, item_id),
   FOREIGN KEY (supply_id) REFERENCES supply (supply_id),
@@ -102,7 +102,7 @@ CREATE TABLE discount (
 CREATE TABLE bill (
   bill_id          int(10) NOT NULL AUTO_INCREMENT, 
   store_id         int(10) NOT NULL, 
-  registered_phone varchar(12), 
+  registered_phone varchar(12) DEFAULT NULL, 
   bill_date        datetime NOT NULL, 
   PRIMARY KEY (bill_id),
   FOREIGN KEY (store_id) REFERENCES store (store_id),
@@ -110,7 +110,6 @@ CREATE TABLE bill (
   
 CREATE TABLE bill_items (
   bill_id         int(10) NOT NULL, 
-  store_id        int(10) NOT NULL, 
   item_id         int(10) NOT NULL, 
   quantity        int(10) NOT NULL,
   unit_price   numeric(6, 2) NOT NULL,
