@@ -1,0 +1,24 @@
+CREATE DEFINER=`root`@`localhost` FUNCTION `create_bill`() RETURNS int
+BEGIN
+
+	declare bill_id INT;
+    
+    INSERT INTO `supermarkets`.`bill`
+	(`store_id`,
+	`registered_phone`,
+	`bill_date`)
+	VALUES
+	(store_id,
+	phone_no,
+	bill_date);
+
+	SELECT bill.bill_id into bill_id
+	from bill
+	where bill.store_id = store_id
+	and bill.registered_phone = phone_no
+	and bill.bill_date = bill.bill_date
+	order by bill.bill_id DESC
+	LIMIT 1;
+    
+RETURN bill_id;
+END
