@@ -1,0 +1,11 @@
+CREATE DEFINER=`root`@`localhost` TRIGGER `supply_item_AFTER_INSERT` AFTER INSERT ON `supply_item` FOR EACH ROW BEGIN
+    SET @store_id = (SELECT sp.store_id FROM supply sp WHERE sp.supply_id = new.supply_id),
+    @item_id = new.item_id,
+    @qty_in_stock = new.quanttity,
+    @unit_price = new.unit_price;
+    INSERT INTO store_item (store_id,item_id,qty_in_stock,unit_price)
+    VALUES(@store_id,@item_id,@qty_in_stock,@unit_price)
+    ON DUPLICATE KEY UPDATE
+     qty_in_stock = qty_in_stock + @qty_in_stock,
+     unit_price = @unit_price;
+END
