@@ -8,9 +8,9 @@ BEGIN
     
     
     SELECT SUM(bill_items.net_price * bill_items.quantity) INTO total 
-    from bill_items where bill_id in
+    from bill_items where bill_items.bill_id in
     (SELECT bill.bill_id from bill
-    where bill.bill_id >= date_start and bill.bill_id <= date_end);
+    where bill.bill_date >= start_date and bill.bill_date <= end_date);
 
 RETURN total;
 END
