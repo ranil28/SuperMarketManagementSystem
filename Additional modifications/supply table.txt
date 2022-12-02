@@ -1,0 +1,2 @@
+INSERT INTO `kwikmart`.`supply` (`warehouse_id`, `store_id`, `supply_date`) VALUES ('9', '35', '2022-12-01');
+INSERT INTO `kwikmart`.`supply` (`warehouse_id`, `store_id`, `supply_date`) VALUES ('12', '69', '2022-12-02');
