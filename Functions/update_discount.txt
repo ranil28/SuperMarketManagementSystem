@@ -34,7 +34,7 @@ IF discount_exist > 0 THEN
     AND discount.item_id = item_id);
 
 ELSE
-	INSERT INTO `kwikmart`.`discount`
+	INSERT INTO discount
 	(`store_id`,
 	`item_id`,
 	`percent_off`,
