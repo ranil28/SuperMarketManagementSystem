@@ -19,7 +19,7 @@ store_item.item_id = item_id;
 
 
 IF discount_percent is NULL THEN
-	INSERT INTO `supermarkets`.`bill_items`
+	INSERT INTO bill_items
 	(`bill_id`,
 	`item_id`,
 	`quantity`,
@@ -35,7 +35,7 @@ IF discount_percent is NULL THEN
 	item_price);
 
 ELSE
-	INSERT INTO `supermarkets`.`bill_items`
+	INSERT INTO bill_items
 	(`bill_id`,
 	`item_id`,
 	`quantity`,
