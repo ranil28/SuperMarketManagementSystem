@@ -7,22 +7,41 @@ BEGIN
 
 	declare bill_id INT;
     
-    INSERT INTO bill
-	(`store_id`,
-	`registered_phone`,
-	`bill_date`)
-	VALUES
-	(store_id,
-	registered_phone,
-	bill_date);
+    if registered_phone = '' then
+		INSERT INTO bill
+		(`store_id`,
+		`bill_date`)
+		VALUES
+		(store_id,
+		bill_date);
 
-	SELECT bill.bill_id into bill_id
-	from bill
-	where bill.store_id = store_id
-	and bill.registered_phone = registered_phone
-	and bill.bill_date = bill.bill_date
-	order by bill.bill_id DESC
-	LIMIT 1;
+		SELECT bill.bill_id into bill_id
+		from bill
+		where bill.store_id = store_id
+		and bill.registered_phone = null
+		and bill.bill_date = bill.bill_date
+		order by bill.bill_id DESC
+		LIMIT 1;
+    
+    else
+    
+		INSERT INTO bill
+		(`store_id`,
+		`registered_phone`,
+		`bill_date`)
+		VALUES
+		(store_id,
+		registered_phone,
+		bill_date);
+
+		SELECT bill.bill_id into bill_id
+		from bill
+		where bill.store_id = store_id
+		and bill.registered_phone = registered_phone
+		and bill.bill_date = bill.bill_date
+		order by bill.bill_id DESC
+		LIMIT 1;
+	end if;
     
 RETURN bill_id;
 END
