@@ -1,0 +1,16 @@
+CREATE DEFINER=`root`@`localhost` FUNCTION `overall_billing`(
+start_date DATE,
+end_date DATE
+) RETURNS int
+BEGIN
+
+	declare total numeric(8,2);
+    
+    
+    SELECT SUM(bill_items.net_price * bill_items.quantity) INTO total 
+    from bill_items where bill_items.bill_id in
+    (SELECT bill.bill_id from bill
+    where bill.bill_date >= start_date and bill.bill_date <= end_date);
+
+RETURN total;
+END

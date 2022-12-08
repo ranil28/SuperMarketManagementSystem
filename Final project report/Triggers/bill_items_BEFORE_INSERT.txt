@@ -1,0 +1,6 @@
+CREATE DEFINER=`root`@`localhost` TRIGGER `bill_items_BEFORE_INSERT` BEFORE INSERT ON `bill_items` FOR EACH ROW BEGIN
+	update store_item
+    set qty_in_stock = qty_in_stock - NEW.quantity
+    where store_item.store_id = (SELECT b.store_id FROM bill b WHERE b.bill_id = NEW.bill_id)
+    and store_item.item_id = NEW.item_id;
+END
