@@ -1,0 +1,50 @@
+CREATE DEFINER=`root`@`localhost` FUNCTION `update_discount`(
+store_id INT,
+item_id INT,
+percent_off INT,
+is_active tinyint(1) 
+) RETURNS tinyint(1)
+BEGIN
+
+declare discount_exist tinyint(1);
+
+
+
+
+if (select count(*) from store_item
+where store_item.store_id = store_id 
+and store_item.item_id = item_id) = 0 then
+	return 0;
+end if;
+
+
+SELECT count(*) into discount_exist
+from discount
+where discount.store_id = store_id
+and discount.item_id = item_id;
+
+IF discount_exist > 0 THEN
+	UPDATE discount
+	SET
+	`store_id` = store_id,
+	`item_id` = item_id,
+	`percent_off` = percent_off,
+	`is_active` = is_active
+	WHERE (discount.store_id = store_id 
+    AND discount.item_id = item_id);
+
+ELSE
+	INSERT INTO discount
+	(`store_id`,
+	`item_id`,
+	`percent_off`,
+	`is_active`)
+	VALUES
+	(store_id,
+	item_id,
+	percent_off,
+	is_active);
+
+END IF;
+RETURN 1;
+END

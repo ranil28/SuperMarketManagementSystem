@@ -1,0 +1,16 @@
+CREATE VIEW current_month_store_revenue AS 
+SELECT b.store_id, CONCAT(s.street_name," , ",s.city) store_detail, s.email store_email, 
+        SUM(bi.quantity*bi.net_price) AS net_revenue_till_date,
+        IF(b.bill_date = DATE_SUB(current_date(), INTERVAL 1 DAY),SUM(bi.quantity*bi.net_price),0) previous_day_revenue,
+        COUNT(DISTINCT b.bill_id) total_bills_till_date
+FROM bill AS b
+JOIN bill_items bi ON bi.bill_id = b.bill_id
+JOIN store_item si ON si.store_id = b.store_id
+	AND bi.item_id = si.item_id
+JOIN item i ON i.item_id = bi.item_id
+JOIN store s ON s.store_id = b.store_id
+WHERE YEAR(current_date()) = YEAR(b.bill_date)
+	AND MONTH(current_date()) = MONTH(b.bill_date)
+
+GROUP BY store_id
+ORDER BY net_revenue_till_date DESC

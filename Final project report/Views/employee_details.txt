@@ -1,0 +1,8 @@
+CREATE VIEW employee_details AS
+SELECT e.emp_id, r.role_name AS role, e.store_id ,CONCAT(s.street_name,", ", s.city) store_address,
+	e.emp_phone AS phone, CONCAT(e.first_name," ",e.last_name) emp_name,
+	e.emp_address
+FROM employee AS e
+JOIN role AS r ON r.role_id = e.role_id
+JOIN store s ON s.store_id = e.store_id
+WHERE e.is_working = 1 AND r.role_name != 'CEO'
